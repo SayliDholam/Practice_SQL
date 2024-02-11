@@ -1,2 +1,3 @@
 # Practice_SQL
-A firing queries in an attempt to learn SQL
+
+Firing queries in an attempt to learn SQL
