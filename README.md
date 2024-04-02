@@ -1,6 +1,6 @@
 # Practice_SQL
 
-Welcome to the SQL Practice Repository! This repository is designed to help you improve your SQL skills through hands-on exercises, examples, and challenges.
+Welcome to the Practice_SQL Repository!.
 
 This repository contains:
 
