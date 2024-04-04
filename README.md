@@ -33,4 +33,18 @@ JOIN operations are used to combine records from two or more tables. Common type
   FROM table1
   INNER JOIN table2 ON table1.common_column = table2.common_column;
 
+- LEFT JOIN: Returns all records from the left table and matching records from the right table.
+  ```sql
+  SELECT table1.column, table2.column
+  FROM table1
+  LEFT JOIN table2 ON table1.common_column = table2.common_column;
+
+- RIGHT JOIN: Returns all records from the right table and matching records from the left table.
+  ```sql
+  SELECT table1.column, table2.column
+  FROM table1
+  RIGHT JOIN table2 ON table1.common_column = table2.common_column;
+
+
+
 <br/>
