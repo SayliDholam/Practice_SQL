@@ -73,4 +73,36 @@ Common types include:
 <br/>
 
 
+### 4. Creating a Table
+A Table is a combination of rows and columns.<br/>
+For creating a table we have to define the structure of a table by adding names to columns and providing data type and size of data to be stored in columns.<br/>
+
+- table_name: Specifies the name of the table to be created.
+- column1, column2,: Defines the columns of the table.
+- datatype: Specifies the data type for each column.
+- constraints: Optional constraints such as PRIMARY KEY, FOREIGN KEY, NOT NULL, UNIQUE, etc., to enforce data integrity and rules on the columns.
+   ```sql
+  CREATE TABLE table_name (
+    column1 datatype constraints,
+    column2 datatype constraints,
+    ...);
+<br/>
+
+
+### 5. Inserting Records
+The INSERT INTO statement is used to insert new records in a table.
+
+- table_name: Specifies the name of the table where data will be inserted.
+- column1, column2..: Specifies the columns to insert data into.
+- VALUES: Keyword indicating the values to be inserted.
+- value1, value2..: Actual values to be inserted into the respective columns.
+   ```sql
+  INSERT INTO table_name (column1, column2, ...)
+   VALUES (value1, value2, ...),
+          (value1, value2, ...)...;
+<br/>
+
+
+
+
 
