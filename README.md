@@ -117,4 +117,7 @@ We can update single columns as well as multiple columns using the UPDATE statem
 <br/>
 
 
+### 7. Date Formatting
+
+<br/>
 
