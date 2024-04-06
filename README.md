@@ -102,6 +102,19 @@ The INSERT INTO statement is used to insert new records in a table.
 <br/>
 
 
+### 6. Updating Records
+The UPDATE statement in SQL is used to update the data of an existing table in the database. <br/>
+We can update single columns as well as multiple columns using the UPDATE statement as per our requirement.
+
+- table_name: Specifies the name of the table to update.
+- column1, column2, ...: Specifies the columns to be updated.
+- value1, value2, ...: Specifies the new values for the corresponding columns.
+- condition: Specifies the condition to identify which rows to update. 
+   ```sql
+  UPDATE table_name
+   SET column1 = value1, column2 = value2, ...
+   WHERE condition;
+<br/>
 
 
 
