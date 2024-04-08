@@ -117,7 +117,29 @@ We can update single columns as well as multiple columns using the UPDATE statem
 <br/>
 
 
-### 7. Date Formatting
+### 7. Partitions:
+Partitioning in SQL involves dividing large tables into smaller, more manageable parts.<br/>
+It improves query performance, simplifies data management, and enhances data availability.  
 
+- table_name: Name of the table to be created.
+- column1, column2, ...: Columns in the table.
+- partitioning_method: Method used to partition the table (RANGE, LIST, HASH, KEY, etc.).
+- partition_options: Options specific to the chosen partitioning method.
+   ```sql
+  CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    ...)
+   PARTITION BY partitioning_method (partition_options);
 <br/>
+
+a. RANGE Partitioning:</br>
+Partitions data based on ranges defined for a column.
+ ```sql
+PARTITION BY RANGE(column_name) (
+    PARTITION p1 VALUES LESS THAN (value1),
+    PARTITION p2 VALUES LESS THAN (value2),
+    ...
+    PARTITION pN VALUES LESS THAN (valueN) );
+
 
