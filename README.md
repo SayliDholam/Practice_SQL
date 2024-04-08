@@ -3,7 +3,7 @@
 Welcome to the Practice_SQL Repository!.
 This repository contains:
 
-- SQL query exercises covering various topics such as SELECT statements, JOIN operations, aggregrate functions, subqueries, and more.
+SQL query exercises covering various topics such as SELECT statements, JOIN operations, aggregrate functions, subqueries, and more.
 <br/>
 
 ### 1. SELECT Statements
@@ -112,8 +112,8 @@ We can update single columns as well as multiple columns using the UPDATE statem
 - condition: Specifies the condition to identify which rows to update. 
    ```sql
   UPDATE table_name
-   SET column1 = value1, column2 = value2, ...
-   WHERE condition;
+  SET column1 = value1, column2 = value2, ...
+  WHERE condition;
 <br/>
 
 
@@ -127,19 +127,47 @@ It improves query performance, simplifies data management, and enhances data ava
 - partition_options: Options specific to the chosen partitioning method.
    ```sql
   CREATE TABLE table_name (
-    column1 datatype,
-    column2 datatype,
-    ...)
-   PARTITION BY partitioning_method (partition_options);
+  column1 datatype,
+  column2 datatype,
+  ...)
+  PARTITION BY partitioning_method (partition_options);
 <br/>
 
-a. RANGE Partitioning:</br>
-Partitions data based on ranges defined for a column.
- ```sql
-PARTITION BY RANGE(column_name) (
+ a. RANGE Partitioning:</br>
+- Partitions data based on ranges defined for a column.
+  ```sql
+  PARTITION BY RANGE(column_name) (
     PARTITION p1 VALUES LESS THAN (value1),
     PARTITION p2 VALUES LESS THAN (value2),
     ...
     PARTITION pN VALUES LESS THAN (valueN) );
+
+
+b. LIST Partitioning:</br>
+- Partitions data based on a predefined list of values.
+  ```sql
+  PARTITION BY LIST(column_name) (
+    PARTITION p1 VALUES IN (value1, value2, ...),
+    PARTITION p2 VALUES IN (value3, value4, ...),
+    ...
+    PARTITION pN VALUES IN (valueN, valueN+1, ...));
+
+
+c. HASH Partitioning:</br>
+- Distributes data uniformly across partitions using a hashing algorithm.
+  ```sql
+  PARTITION BY HASH(column_name) PARTITIONS num_partitions;
+
+
+ d. KEY Partitioning:</br>
+- used for columns with unique values
+  ```sql
+  PARTITION BY KEY(column_name) PARTITIONS num_partitions;
+<br/>
+
+
+### 7. Partitions:
+Partitioning in SQL involves dividing large tables into smaller, more manageable parts.<br/>
+
 
 
