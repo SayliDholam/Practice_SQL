@@ -166,8 +166,7 @@ c. HASH Partitioning:</br>
 <br/>
 
 
-### 7. Partitions:
-Partitioning in SQL involves dividing large tables into smaller, more manageable parts.<br/>
+
 
 
 
