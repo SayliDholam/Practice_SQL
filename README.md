@@ -164,6 +164,8 @@ c. HASH Partitioning:</br>
   ```sql
   PARTITION BY KEY(column_name) PARTITIONS num_partitions;
 <br/>
+<br/>
+<br/>
 
 
 
