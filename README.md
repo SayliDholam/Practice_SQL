@@ -6,7 +6,7 @@ This repository contains:
 SQL query exercises covering various topics such as SELECT statements, JOIN operations, aggregrate functions, subqueries, and more.
 <br/>
 
-### 1. SELECT Statements
+### 1. Select Statements
 
 The `SELECT` statement is used to retrieve data from a database. Here are some common variations:
 - Basic SELECT: Retrieve all columns from a table.
@@ -23,7 +23,7 @@ The `SELECT` statement is used to retrieve data from a database. Here are some c
 <br/>
 
 
-### 2. JOIN Operations
+### 2. Join Operations
 
 JOIN operations are used to combine records from two or more tables. Common types include:
 - INNER JOIN: Returns records that have matching values in both tables.
